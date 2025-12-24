@@ -6,7 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
-  <title>China Sponsor Spel</title>
+  <title>Dragon Tetris - Sponsor Uitleg</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -120,13 +120,14 @@
       width: 100%;
       margin: 0;
       padding: 0;
-      overflow: hidden;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
       background-color: #050510;
       color: white;
       -webkit-font-smoothing: antialiased;
       font-family: 'Inter', sans-serif;
-      touch-action: none;
-      /* Disable native touch gestures like scroll/zoom */
+      touch-action: pan-y;
+      /* Allow vertical scrolling on touch */
       overscroll-behavior: none;
       user-select: none;
       -webkit-user-select: none;
